@@ -38,7 +38,7 @@ Untuk mendapatkan karakter suara yang sesuai, unduh dan siapkan SoundFont beriku
 | **Piano Utama** | [Grand Piano](https://github.com/draconian9908/RadialSynth/blob/master/sound_files/Full%20Grand%20Piano.sf2) | `full_grand_piano.sf2` |
 | **Strings Pad 1** | [198 SY1 Stringpad](https://www.zanderjaz.com/soundfonts/strings/198_sy1_Stringpad.sf2) | `stringpad_1.sf2` |
 | **Deep Strings** | [Deep Strings SF2](https://www.zanderjaz.com/soundfonts/strings/Deep%20Strings.SF2) | `deep_strings.sf2` |
-| **Glockenspiel** | [Ethan Winer Glockenspiel](https://ethanwiner.com/glockenspiel.zip) | `glockenspiel.sf2` |
+| **Glockenspiel** | [Glockenspiel](https://ethanwiner.com/glockenspiel.zip) | `glockenspiel.sf2` |
 
 > **Catatan:** Untuk Glockenspiel, ekstrak file `.zip` terlebih dahulu dan ambil file `.sf2`-nya saja. Letakkan semua file di atas di folder utama proyek atau folder `assets/soundfonts/`.
 
