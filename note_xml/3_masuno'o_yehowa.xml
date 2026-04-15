@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<score-partwise version="4.0">
+  <work><work-title>3. Masuno'ö Yehowa</work-title></work>
+  <part-list>
+    <score-part id="P1"><part-name>Piano</part-name></score-part>
+  </part-list>
+  <part id="P1">
+    
+    <measure number="1">
+      <attributes>
+        <divisions>4</divisions>
+        <key><fifths>-1</fifths></key> <time><beats>3</beats><beat-type>4</beat-type></time>
+        <clef><sign>G</sign><line>2</line></clef>
+      </attributes>
+      <barline location="left"><bar-style>heavy-light</bar-style><repeat direction="forward"/></barline>
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>Ma</text></lyric><lyric number="2"><text>Khö-U</text></lyric></note>
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric number="1"><text>su-</text></lyric><lyric number="2"><text>ma-</text></lyric></note>
+    </measure>
+
+    <measure number="2">
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric number="1"><text>no'</text></lyric><lyric number="2"><text>nga</text></lyric></note>
+      <note><pitch><step>E</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>Ö</text></lyric><lyric number="2"><text>lu-</text></lyric></note>
+    </measure>
+
+    <measure number="3">
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric number="1"><text>Ye-</text></lyric><lyric number="2"><text>lu</text></lyric></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>ho-</text></lyric><lyric number="2"><text>ni-</text></lyric></note>
+    </measure>
+
+    <measure number="4">
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>wa,</text></lyric><lyric number="2"><text>ha,</text></lyric></note>
+      <note><rest/><duration>4</duration><type>quarter</type></note>
+    </measure>
+
+    <measure number="5">
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>fa'</text></lyric><lyric number="2"><text>oi</text></lyric></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric number="1"><text>a-</text></lyric><lyric number="2"><text>a-</text></lyric></note>
+    </measure>
+
+    <measure number="6">
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric number="1"><text>bö-</text></lyric><lyric number="2"><text>hö-</text></lyric></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>lö-</text></lyric><lyric number="2"><text>li-</text></lyric></note>
+    </measure>
+
+    <measure number="7">
+      <note><pitch><step>C</step><octave>5</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric number="1"><text>Mö</text></lyric><lyric number="2"><text>hö-</text></lyric></note>
+      <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric number="1"><text>ma-</text></lyric><lyric number="2"><text>li</text></lyric></note>
+    </measure>
+
+    <measure number="8">
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric number="1"><text>su-</text></lyric><lyric number="2"><text>dö-</text></lyric></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric number="1"><text>no.</text></lyric><lyric number="2"><text>dö.</text></lyric></note>
+      <note><rest/><duration>4</duration><type>quarter</type></note>
+      <barline location="right"><bar-style>light-heavy</bar-style><repeat direction="backward"/></barline>
+    </measure>
+
+    <measure number="9">
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric><text>Lö</text></lyric></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric><text>ae-</text></lyric></note>
+    </measure>
+
+    <measure number="10">
+      <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric><text>fa'</text></lyric></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric><text>Ö</text></lyric></note>
+    </measure>
+
+    <measure number="11">
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric><text>sa-</text></lyric></note>
+      <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>4</duration><type>quarter</type><lyric><text>la</text></lyric></note>
+    </measure>
+
+    <measure number="12">
+      <note><pitch><step>C</step><octave>5</octave></pitch><duration>8</duration><type>half</type><lyric><text>wâ,</text></lyric></note>
+      <note><rest/><duration>4</duration><type>quarter</type></note>
+    </measure>
+
+    <measure number="13">
+      <note><pitch><step>D</step><octave>5</octave></pitch><duration>8</duration><type>half</type><lyric><text>gö-</text></lyric></note>
+      <note><pitch><step>D</step><octave>5</octave></pitch><duration>4</duration><type>quarter</type><lyric><text>tö</text></lyric></note>
+    </measure>
+
+    <measure number="14">
+      <note><pitch><step>C</step><octave>5</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric><text>gö-</text></lyric></note>
+      <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>8</duration><type>half</type></note>
+    </measure>
+
+    <measure number="15">
+      <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">begin</beam><notations><slur type="start" number="1"/></notations><lyric><text>tö-</text></lyric></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>2</duration><type>eighth</type><beam number="1">end</beam><notations><slur type="stop" number="1"/></notations></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric><text>wa'</text></lyric></note>
+    </measure>
+
+    <measure number="16">
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>8</duration><type>half</type><lyric><text>a-ra.</text></lyric></note>
+      <note><rest/><duration>4</duration><type>quarter</type></note>
+      <barline location="right"><bar-style>light-heavy</bar-style></barline>
+    </measure>
+  </part>
+</score-partwise>
