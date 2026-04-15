@@ -1,46 +1,52 @@
-# Note2Music: XML to MP3 Batch Converter
+# Note2Music: XML to MP3 Batch Converter (BKZ AFY Edition)
 
-Proyek automasi Python untuk mengonversi partitur musik digital (MusicXML) menjadi file audio MP3 berkualitas tinggi secara massal (_batch processing_).
+Proyek automasi Python untuk mengonversi partitur musik digital (MusicXML) menjadi file audio MP3 berkualitas tinggi secara massal (_batch processing_), khusus dikembangkan untuk kebutuhan **BKZ AFY**.
 
-Script ini menggunakan **music21** untuk membaca XML, **FluidSynth** untuk merender instrumen nyata menggunakan SoundFont (.sf2), dan **FFmpeg** untuk mengompresi audio serta memotong keheningan (_silence removal_) secara otomatis.
+Script ini menggunakan **music21** untuk membaca XML, **FluidSynth** untuk merender instrumen menggunakan berbagai SoundFont (.sf2) berkualitas tinggi, dan **FFmpeg** untuk kompresi audio serta pemotongan keheningan (_silence removal_).
 
 ## Fitur Utama
 
+- **BKZ AFY Optimized:** Konfigurasi khusus untuk proyek Buku Zinuno dengan karakter suara yang lebih kaya.
+- **Multi-SoundFont Support:** Mendukung penggunaan Strings Pad dan Glockenspiel untuk hasil audio yang lebih megah.
 - **Batch Processing:** Memproses puluhan/ratusan file XML dalam satu folder sekaligus.
-- **Auto-Skip:** Melewati file yang sudah pernah dirender, sangat hemat waktu.
-- **High-Quality Audio:** Menggunakan VBR (Variable Bitrate) MP3 dan efek Reverb/Chorus agar suara instrumen (Piano) terdengar "hidup" dan natural.
-- **Smart Silence Removal:** Otomatis memotong keheningan/suara kosong di akhir lagu secara presisi.
-- **Auto-Cleanup:** Otomatis membersihkan file MIDI sementara dan file WAV raksasa setelah kompresi MP3 selesai.
+- **Smart Silence Removal:** Otomatis memotong keheningan di akhir lagu secara presisi.
+- **Auto-Cleanup:** Otomatis menghapus file MIDI dan WAV sementara setelah MP3 selesai dibuat.
 
 ---
 
 ## Persiapan & Prasyarat (Wajib Dibaca)
 
-Karena batasan ukuran file dan hak cipta, program pendukung (_executable_) dan SoundFont **TIDAK** disertakan di dalam repositori ini. Anda harus mengunduh dan menyiapkannya secara manual.
+Karena batasan ukuran file, program pendukung (_executable_) dan SoundFont **TIDAK** disertakan di repositori ini. Anda harus menyiapkannya secara manual.
 
 ### 1. Instalasi Library Python
-
-Pastikan Anda sudah menginstal Python 3.x. Buka terminal dan jalankan:
 `pip install music21`
 
-### 2. Download FluidSynth (Render Audio)
+### 2. Download FluidSynth (Renderer)
+1. Download versi Windows dari [FluidSynth GitHub](https://github.com/FluidSynth/fluidsynth/releases) (cari `win10-x64-glib.zip`).
+2. Ekstrak dan copy `fluidsynth.exe` serta **semua file .dll** ke folder utama proyek.
 
-1. Pergi ke halaman rilis [FluidSynth GitHub](https://github.com/FluidSynth/fluidsynth/releases).
-2. Download versi Windows (Cari file zip berakhiran `win10-x64-glib.zip`).
-3. Ekstrak file zip, buka folder `bin`.
-4. Copy `fluidsynth.exe` beserta **semua file `.dll`** ke dalam folder utama proyek ini.
+### 3. Download FFmpeg (Compressor)
+1. Download dari [FFmpeg Master Builds](https://github.com/BtbN/FFmpeg-Builds/releases).
+2. Copy `ffmpeg.exe` ke folder utama proyek.
 
-### 3. Download FFmpeg (Kompresi Audio)
+### 4. Setup SoundFont (.sf2) — Khusus BKZ AFY
+Untuk mendapatkan karakter suara yang sesuai, unduh dan siapkan SoundFont berikut:
 
-1. Pergi ke halaman [FFmpeg Master Builds](https://github.com/BtbN/FFmpeg-Builds/releases).
-2. Download file `ffmpeg-master-latest-win64-gpl.zip`.
-3. Ekstrak file zip, buka folder `bin`.
-4. Copy `ffmpeg.exe` ke dalam folder utama proyek ini.
 
-### 4. Siapkan SoundFont (.sf2)
+| Instrumen | Sumber Download | Nama File di Proyek |
+| :--- | :--- | :--- |
+| **Piano Utama** | [Salamander Grand Piano](https://salamanderpiano.com) | `full_grand_piano.sf2` |
+| **Strings Pad 1** | [198 SY1 Stringpad](https://www.zanderjaz.com/soundfonts/strings/198_sy1_Stringpad.sf2) | `stringpad_1.sf2` |
+| **Deep Strings** | [Deep Strings SF2](https://www.zanderjaz.com/soundfonts/strings/Deep%20Strings.SF2) | `deep_strings.sf2` |
+| **Glockenspiel** | [Ethan Winer Glockenspiel](https://ethanwiner.com/glockenspiel.zip) | `glockenspiel.sf2` |
 
-Anda memerlukan file rekaman instrumen asli (SoundFont).
+> **Catatan:** Untuk Glockenspiel, ekstrak file `.zip` terlebih dahulu dan ambil file `.sf2`-nya saja. Letakkan semua file di atas di folder utama proyek atau folder `assets/soundfonts/`.
 
-1. Download SoundFont Piano gratis seperti **Salamander Grand Piano** atau **FluidR3_GM**.
-2. Ubah nama file menjadi `full_grand_piano.sf2` (atau sesuaikan variabel `SOUNDFONT` di dalam kode Python).
-3. Letakkan file tersebut di dalam folder utama proyek.
+---
+
+## Cara Penggunaan
+1. Letakkan file `.xml` Anda di folder input.
+2. Pastikan semua file `.exe` dan `.sf2` sudah berada di tempatnya.
+3. Jalankan script:
+   ```bash
+   python main.py
