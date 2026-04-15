@@ -36,7 +36,7 @@ def ambil_nama_dari_xml(path_xml):
     judul = re.sub(r"[^a-z0-9_']", '', judul)
 
     if nomor:
-        return f"{nomor}_{judul}"
+        return f"{nomor}"
     else:
         return judul
     
