@@ -8,7 +8,6 @@ start_number = 8
 files = [f for f in os.listdir(folder_path) if f.startswith("Screenshot")]
 
 def extract_datetime(name):
-    # contoh: Screenshot 2026-04-14 164635.png
     parts = name.replace("Screenshot ", "").split(".")[0]
     return datetime.strptime(parts, "%Y-%m-%d %H%M%S")
 

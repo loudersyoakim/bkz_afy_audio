@@ -40,8 +40,6 @@ Untuk mendapatkan karakter suara yang sesuai, unduh dan siapkan SoundFont beriku
 | **Deep Strings** | [Deep Strings SF2](https://www.zanderjaz.com/soundfonts/strings/Deep%20Strings.SF2) | `deep_strings.sf2` |
 | **Glockenspiel** | [Glockenspiel](https://ethanwiner.com/glockenspiel.zip) | `glockenspiel.sf2` |
 
-> **Catatan:** Untuk Glockenspiel, ekstrak file `.zip` terlebih dahulu dan ambil file `.sf2`-nya saja. Letakkan semua file di atas di folder utama proyek atau folder `assets/soundfonts/`.
-
 ---
 
 ## Cara Penggunaan
