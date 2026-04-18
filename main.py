@@ -43,7 +43,6 @@ def ambil_nama_dari_xml(path_xml):
 def proses_single_file(path_xml):
     print(f"Sedang memproses file: {path_xml}")
     nama_dasar = ambil_nama_dari_xml(path_xml)    
-    # Siapkan 4 slot WAV
     wav_piano = os.path.join(FOLDER_WAV, f"{nama_dasar}_piano.wav")
     wav_glock = os.path.join(FOLDER_WAV, f"{nama_dasar}_glock.wav")
     wav_pad = os.path.join(FOLDER_WAV, f"{nama_dasar}_pad.wav")
@@ -62,11 +61,9 @@ def proses_single_file(path_xml):
     try:
         converter.xml_to_midi(path_xml, file_midi)
         
-        # Render 4 layer
         converter.render_layers_to_wav(file_midi, wav_piano, wav_glock, wav_pad, wav_deeps)
         time.sleep(1)
         
-        # Mix 4 file jadi 1 MP3
         ukuran_mp3 = converter.mix_and_compress(wav_piano, wav_glock, wav_pad, wav_deeps, path_mp3)
         time.sleep(0.5)
 
@@ -75,7 +72,6 @@ def proses_single_file(path_xml):
     except Exception as e:
         print(f"ERROR memproses {nama_dasar}: {e}\n")
     finally:
-        # Bersihkan 5 file sementara
         for temp_file in [file_midi, wav_piano, wav_glock, wav_pad, wav_deeps]:
             if os.path.exists(temp_file):
                 os.remove(temp_file)

@@ -7,23 +7,19 @@ from config import (
 )
     
 def humanize_velocity(stream):
-    """Memberikan 'perasaan' pada MIDI agar tidak menusuk di nada tinggi."""
     prev_pitch = None
     for n in stream.recurse():
         if isinstance(n, (note.Note, chord.Chord)):
-            # Ambil nilai pitch (60 = Middle C)
             current_pitch = n.pitch.ps if isinstance(n, note.Note) else n.pitches[0].ps
-            base_vel = 95  # Kekuatan dasar
+            base_vel = 95 
 
-            # 1. Pitch Scaling: Semakin tinggi nada, semakin lembut pukulannya
-            if current_pitch > 75: # Di atas C5
+            if current_pitch > 75: 
                 reduction = (current_pitch - 75) * 1.5
                 base_vel -= reduction
 
-            # 2. Jump Smoothing: Lembutkan nada jika ada lompatan jauh (> 1 oktaf)
             if prev_pitch is not None:
                 if abs(current_pitch - prev_pitch) > 12:
-                    base_vel *= 0.8  # Kurangi tenaga 20%
+                    base_vel *= 0.8  
 
             n.volume.velocity = max(30, min(127, int(base_vel)))
             prev_pitch = current_pitch
@@ -31,7 +27,7 @@ def humanize_velocity(stream):
 def xml_to_midi(file_xml, file_midi):
     print(f"1. Membaca & Humanisasi XML: {os.path.basename(file_xml)}...")
     partitur = converter.parse(file_xml)
-    humanize_velocity(partitur) # Terapkan perasaan
+    humanize_velocity(partitur)
     partitur.write('midi', fp=file_midi)
 
 def _render_fluid(file_midi, file_wav, sf2_path, gain_vol="1.0"):
@@ -49,13 +45,13 @@ def render_layers_to_wav(file_midi, wav_piano, wav_glock, wav_pad, wav_deeps):
     print("2. Rendering Piano...")
     _render_fluid(file_midi, wav_piano, SOUNDFONT_PIANO, gain_vol="2.5")
     
-    print("3. Rendering Glockenspiel (Aksen 15%)...")
+    print("3. Rendering Glockenspiel...")
     _render_fluid(file_midi, wav_glock, SOUNDFONT_GLOCK, gain_vol="0.15")
 
-    print("4. Rendering Stringpad (Atmosphere 15%)...")
+    print("4. Rendering Stringpad...")
     _render_fluid(file_midi, wav_pad, SOUNDFONT_STRINGPAD, gain_vol="0.1")
 
-    print("5. Rendering Deep Strings (Bass 50%)...")
+    print("5. Rendering Deep Strings...")
     _render_fluid(file_midi, wav_deeps, SOUNDFONT_DEEPS, gain_vol="0.8")
 
 def mix_and_compress(wav_piano, wav_glock, wav_pad, wav_deeps, file_mp3):
