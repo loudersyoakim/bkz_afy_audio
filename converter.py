@@ -46,10 +46,10 @@ def render_layers_to_wav(file_midi, wav_piano, wav_glock, wav_pad, wav_deeps):
     _render_fluid(file_midi, wav_piano, SOUNDFONT_PIANO, gain_vol="2.5")
     
     print("3. Rendering Glockenspiel...")
-    _render_fluid(file_midi, wav_glock, SOUNDFONT_GLOCK, gain_vol="0.35")
+    _render_fluid(file_midi, wav_glock, SOUNDFONT_GLOCK, gain_vol="0.15")
 
     print("4. Rendering Stringpad...")
-    _render_fluid(file_midi, wav_pad, SOUNDFONT_STRINGPAD, gain_vol="0.4")
+    _render_fluid(file_midi, wav_pad, SOUNDFONT_STRINGPAD, gain_vol="0.3")
 
     print("5. Rendering Deep Strings...")
     _render_fluid(file_midi, wav_deeps, SOUNDFONT_DEEPS, gain_vol="1.5")

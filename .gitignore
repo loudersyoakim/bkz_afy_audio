@@ -8,3 +8,4 @@
 # Folder environment python (jika ada)
 venv/
 __pycache__/
+awok/
