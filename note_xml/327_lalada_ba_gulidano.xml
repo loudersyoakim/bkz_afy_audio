@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<score-partwise version="4.0">
+  <work>
+    <work-title>327. LALADA BA GULIDANÖ</work-title>
+  </work>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Vocal</part-name>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <measure number="1" implicit="yes">
+      <attributes>
+        <divisions>4</divisions>
+        <key>
+          <fifths>0</fifths>
+        </key>
+        <time>
+          <beats>4</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <!-- Tanda awal pengulangan -->
+      <barline location="left">
+        <bar-style>heavy-light</bar-style>
+        <repeat direction="forward"/>
+      </barline>
+      <direction placement="above">
+        <direction-type>
+          <metronome>
+            <beat-unit>quarter</beat-unit>
+            <per-minute>120</per-minute>
+          </metronome>
+        </direction-type>
+        <sound tempo="120"/>
+      </direction>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <lyric number="1">
+          <text>La</text>
+        </lyric>
+        <lyric number="2">
+          <text>Ba</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <lyric number="1">
+          <text>la</text>
+        </lyric>
+        <lyric number="2">
+          <text>wo</text>
+        </lyric>
+      </note>
+    </measure>
+
+    <!-- Measure 2 -->
+    <measure number="2">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>da</text>
+        </lyric>
+        <lyric number="2">
+          <text>ga</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>ba</text>
+        </lyric>
+        <lyric number="2">
+          <text>mö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>gu</text>
+        </lyric>
+        <lyric number="2">
+          <text>fo</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>li</text>
+        </lyric>
+        <lyric number="2">
+          <text>lo</text>
+        </lyric>
+      </note>
+    </measure>
+
+    <!-- Measure 3 -->
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <notations>
+          <slur type="start" number="1" placement="below"/>
+        </notations>
+        <lyric number="1">
+          <text>da</text>
+        </lyric>
+        <lyric number="2">
+          <text>mba</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <notations>
+          <slur type="stop" number="1"/>
+        </notations>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <type>half</type>
+        <lyric number="1">
+          <text>nö</text>
+        </lyric>
+        <lyric number="2">
+          <text>se</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+        <beam number="1">begin</beam>
+        <lyric number="1">
+          <text>hi</text>
+        </lyric>
+        <lyric number="2">
+          <text>tö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>eighth</type>
+        <beam number="1">end</beam>
+        <lyric number="1">
+          <text>li</text>
+        </lyric>
+        <lyric number="2">
+          <text>dö</text>
+        </lyric>
+      </note>
+    </measure>
+
+    <!-- Measure 4 -->
+    <measure number="4">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>sa</text>
+        </lyric>
+        <lyric number="2">
+          <text>si</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>nae</text>
+        </lyric>
+        <lyric number="2">
+          <text>no</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>re</text>
+        </lyric>
+        <lyric number="2">
+          <text>ma</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>nae</text>
+        </lyric>
+        <lyric number="2">
+          <text>ra</text>
+        </lyric>
+      </note>
+    </measure>
+
+    <!-- Measure 5 -->
+    <measure number="5">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>12</duration>
+        <type>half</type>
+        <dot/>
+        <lyric number="1">
+          <text>re,</text>
+        </lyric>
+        <lyric number="2">
+          <text>se,</text>
+        </lyric>
+      </note>
+      <note>
+        <rest/>
+        <duration>2</duration>
+        <type>quarter</type>
+      </note>
+      <!-- Tanda akhir pengulangan -->
+      <barline location="right">
+        <bar-style>light-heavy</bar-style>
+        <repeat direction="backward"/>
+      </barline>
+    </measure>
+    <measure number="6" implicit="yes">
+   
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <lyric number="1">
+          <text>Lö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <lyric number="1">
+          <text>le</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="7">
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>mba</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>le</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>mba</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>sa</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="8">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <type>half</type>
+        <lyric number="1">
+          <text>ro</text>
+        </lyric>
+      </note>
+      <note>
+        <rest/>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <notations>
+          <slur type="start" number="1" placement="below"/>
+        </notations>
+        <lyric number="1">
+          <text>lö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <notations>
+          <slur type="stop" number="1"/>
+        </notations>
+        <lyric number="1">
+          <text>sö</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="9">
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>khi</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>na</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>ha</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>ga</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="10">
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <type>half</type>
+        <lyric number="1">
+          <text>he,</text>
+        </lyric>
+      </note>
+      <note>
+        <rest/>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <lyric number="1">
+          <text>Ha</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <lyric number="1">
+          <text>sa</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="11">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>mba</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>lö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>fa'</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>a</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="12">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <notations>
+          <slur type="start" number="1" placement="below"/>
+        </notations>
+        <lyric number="1">
+          <text>fö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <notations>
+          <slur type="stop" number="1"/>
+        </notations>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <type>half</type>
+        <lyric number="1">
+          <text>khö</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <dot/>
+        <beam number="1">begin</beam>
+        <lyric number="1">
+          <text>we</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <beam number="2">backward hook</beam>
+        <lyric number="1">
+          <text>ko</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="13">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>li</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>da</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>ia</text>
+        </lyric>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+        <lyric number="1">
+          <text>da'</text>
+        </lyric>
+      </note>
+    </measure>
+    <measure number="14">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <type>half</type>
+        <lyric number="1">
+          <text>e.</text>
+        </lyric>
+      </note>
+      <note>
+        <rest/>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <barline location="right">
+        <bar-style>light-heavy</bar-style>
+      </barline>
+    </measure>
+  </part>
+</score-partwise>
